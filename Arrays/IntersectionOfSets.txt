@@ -1,0 +1,13 @@
+For example, consider there are three sets {1,2,2,3,4} {2,2,3,5,6} {1,3,2,2,6}. The intersection of the given sets should be {2,2,3}
+
+The following is an efficient approach to solve this problem.
+
+1. Sort all the sets.
+2. Take the smallest set, and insert all the elements, and their frequencies into a map.
+3. For each element in the map do the following
+…..a. If the element is not present in any set, ignore it
+…..b. Find the frequency of the element in each set (using binary search). If it less than the frequency in the map, update the frequency
+…..c. If the element is found in all the sets, add it to the result.
+
+Here is the C++ implementation of the above approach.
+

@@ -1,0 +1,5 @@
+Ropes of diff size is given, all have to be joined. When joined, the cost = sum of individual rope length.
+Maintain a min-heap.
+First push all elements of array into it.
+Then while it is not empty, pop the top two elements from it, add it and push them to the same heap.
+When the heap has only one element, the element will be the final cost.
